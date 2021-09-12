@@ -3,6 +3,24 @@
   <h2 align="center">frank</h2>
 </p>
 
+## Preview
+
+**Expo**
+
+> https://expo.dev/@domnc/frank
+
+The current production build is served by [Expo](https://expo.dev/@domnc/frank)
+
+```http
+https://expo.dev/@domnc/frank
+```
+
+Expo Go
+
+```http
+exp://exp.host/@domnc/frank
+```
+
 ---
 
 ## LICENSE
