@@ -1,6 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import {
+  initialWindowMetrics,
+  SafeAreaProvider,
+} from "react-native-safe-area-context";
 
 const styles = StyleSheet.create({
   container: {
@@ -12,8 +16,10 @@ const styles = StyleSheet.create({
 });
 
 export const App = () => (
-  <View style={styles.container}>
-    <Text>frank.</Text>
+  <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+    <View style={styles.container}>
+      <Text>frank.</Text>
+    </View>
     <StatusBar animated translucent={true} />
-  </View>
+  </SafeAreaProvider>
 );
