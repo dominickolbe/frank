@@ -3,7 +3,7 @@
     "name": "frank",
     "slug": "frank",
     "scheme": "frank",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "frank",
     "privacy": "unlisted",
     "platforms": [
@@ -24,12 +24,12 @@
       "**/*"
     ],
     "ios": {
-      "buildNumber": "0.0.1",
+      "buildNumber": "0.0.2",
       "bundleIdentifier": "app.domnc.frank",
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 420000001,
+      "versionCode": 420000002,
       "package": "app.domnc.frank"
     },
     "androidStatusBar": {
