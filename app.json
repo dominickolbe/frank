@@ -3,10 +3,13 @@
     "name": "frank",
     "slug": "frank",
     "scheme": "frank",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "frank",
     "privacy": "unlisted",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
@@ -17,14 +20,16 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "buildNumber": "0.0.0",
+      "buildNumber": "0.0.1",
       "bundleIdentifier": "app.domnc.frank",
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 0,
+      "versionCode": 420000001,
       "package": "app.domnc.frank"
     },
     "androidStatusBar": {
