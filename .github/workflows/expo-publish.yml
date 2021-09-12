@@ -1,0 +1,36 @@
+name: Expo Publish
+
+on:
+  push:
+    tags:
+      - v*.*.*
+
+jobs:
+  publish:
+    name: Install and publish
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: ["16"]
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - uses: expo/expo-github-action@v6
+        with:
+          expo-version: 4.x
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Publish to Expo
+        run: expo publish
